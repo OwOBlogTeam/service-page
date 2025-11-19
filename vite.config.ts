@@ -4,7 +4,7 @@ import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/service/', // 设置基础路径
+  base: '/service-page/', // 设置基础路径
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src')
