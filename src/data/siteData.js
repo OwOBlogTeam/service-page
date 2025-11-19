@@ -7,24 +7,16 @@
  *      \_____/ |___/|___/     \_____/ |_____/ |_____| \_____/ \_____/
  *
  *  Copyright (c) 2023 by OwOTeam-DGMT (OwOBlog).
- * @Date         : 2025-09-28 23:20:49
+ * @Date         : 2025-09-29 01:59:35
  * @Author       : HanskiJay
  * @LastEditors  : HanskiJay
- * @LastEditTime : 2025-09-29 01:12:48
+ * @LastEditTime : 2025-09-29 02:01:18
  * @E-Mail       : support@owoblog.com
  * @Telegram     : https://t.me/HanskiJay
  * @GitHub       : https://github.com/Tommy131
  */
-import { createApp } from 'vue'
-import App from './App.vue'
-import { useI18n } from '@/composables/useI18n'
-import { translations } from '@/data/translations'
-
-const app = createApp(App)
-
-// 初始化国际化
-const { loadTranslations, initLanguage } = useI18n()
-loadTranslations(translations)
-initLanguage()
-
-app.mount('#app')
+export const siteConfig = {
+  name: 'OwO Studio',
+  title: 'OwO 数字工作室',
+  subtitle: '专业的数字化解决方案提供商',
+}
